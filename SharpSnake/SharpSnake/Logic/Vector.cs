@@ -9,6 +9,14 @@ namespace SharpSnake.Logic
         public int X { get; set; }
         public int Y { get; set; }
 
+        public int Area
+        {
+            get
+            {
+                return X * Y;
+            }
+        }
+
         public Vector()
         {
             X = 0;
