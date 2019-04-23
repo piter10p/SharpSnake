@@ -59,5 +59,23 @@ namespace SharpSnake.Logic
             vector.Y = a.Y * b.Y;
             return vector;
         }
+
+        public static Vector operator /(Vector a, Vector b)
+        {
+            try
+            {
+                if (b.X == 0 || b.Y == 0)
+                    throw new DivideByZeroException();
+
+                var vector = new Vector();
+                vector.X = a.X / b.X;
+                vector.Y = a.Y / b.Y;
+                return vector;
+            }
+            catch
+            {
+                throw;
+            }
+        }
     }
 }
