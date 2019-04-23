@@ -8,5 +8,11 @@ namespace SharpSnake.Logic
     {
         public int X { get; set; }
         public int Y { get; set; }
+
+        public Vector()
+        {
+            X = 0;
+            Y = 0;
+        }
     }
 }
