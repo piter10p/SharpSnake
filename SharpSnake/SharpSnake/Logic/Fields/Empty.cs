@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SharpSnake.Logic.Fields
 {
-    class Empty: Field
+    public class Empty: Field
     {
     }
 }
