@@ -29,5 +29,13 @@ namespace SharpSnake.Logic
         {
             fieldsArray[coordinates.Area] = field;
         }
+
+        private void FillBoardWithEmptyFields()
+        {
+            for(int i = 0; i < Size.Area; i++)
+            {
+                fieldsArray[i] = new Empty();
+            }
+        }
     }
 }
