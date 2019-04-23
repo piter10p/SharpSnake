@@ -56,5 +56,17 @@ namespace SharpSnake.Tests.Logic
 
             Assert.AreEqual(true, c.Equals(expected));
         }
+
+        [Test]
+        public void Dividing()
+        {
+            var a = new Vector(-5, 40);
+            var b = new Vector(5, 20);
+            var c = a / b;
+
+            var expected = new Vector(-1, 2);
+
+            Assert.AreEqual(true, c.Equals(expected));
+        }
     }
 }
