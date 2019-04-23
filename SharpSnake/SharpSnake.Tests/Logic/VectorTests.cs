@@ -44,5 +44,17 @@ namespace SharpSnake.Tests.Logic
 
             Assert.AreEqual(true, c.Equals(expected));
         }
+
+        [Test]
+        public void Multiplying()
+        {
+            var a = new Vector(-5, 20);
+            var b = new Vector(5, 20);
+            var c = a * b;
+
+            var expected = new Vector(-25, 400);
+
+            Assert.AreEqual(true, c.Equals(expected));
+        }
     }
 }
