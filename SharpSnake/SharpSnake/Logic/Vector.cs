@@ -14,5 +14,11 @@ namespace SharpSnake.Logic
             X = 0;
             Y = 0;
         }
+
+        public Vector(int x, int y)
+        {
+            X = x;
+            Y = y;
+        }
     }
 }
