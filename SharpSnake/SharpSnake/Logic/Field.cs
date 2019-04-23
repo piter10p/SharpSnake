@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SharpSnake.Logic
 {
-    interface Field
+    public interface Field
     {
     }
 }
