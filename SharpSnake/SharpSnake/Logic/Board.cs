@@ -36,6 +36,11 @@ namespace SharpSnake.Logic
             fieldsArray[coordinates.Area] = field;
         }
 
+        public void SetField(int index, Field field)
+        {
+            fieldsArray[index] = field;
+        }
+
         private void FillBoardWithEmptyFields()
         {
             for(int i = 0; i < Size.Area; i++)
