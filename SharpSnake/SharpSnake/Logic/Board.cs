@@ -26,6 +26,11 @@ namespace SharpSnake.Logic
             return fieldsArray[coordinates.Area];
         }
 
+        public Field GetField(int index)
+        {
+            return fieldsArray[index];
+        }
+
         public void SetField(Vector coordinates, Field field)
         {
             fieldsArray[coordinates.Area] = field;
