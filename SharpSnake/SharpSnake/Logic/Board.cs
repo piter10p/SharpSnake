@@ -6,5 +6,6 @@ namespace SharpSnake.Logic
 {
     class Board
     {
+        private Field[] fieldsArray;
     }
 }
