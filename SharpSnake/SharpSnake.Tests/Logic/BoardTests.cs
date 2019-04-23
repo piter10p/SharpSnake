@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using NUnit.Framework;
 using SharpSnake.Logic;
+using SharpSnake.Logic.Fields;
 
 namespace SharpSnake.Tests.Logic
 {
