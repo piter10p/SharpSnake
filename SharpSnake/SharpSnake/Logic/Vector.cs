@@ -28,5 +28,12 @@ namespace SharpSnake.Logic
             X = x;
             Y = y;
         }
+
+        public bool Equals(Vector vector)
+        {
+            if (X == vector.X && Y == vector.Y)
+                return true;
+            return false;
+        }
     }
 }
