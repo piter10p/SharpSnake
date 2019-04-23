@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SharpSnake.Logic
 {
-    class Board
+    public class Board
     {
         private Field[] fieldsArray;
         
