@@ -16,6 +16,12 @@ namespace SharpSnake.Tests.Logic
             var size = new Vector(5, 5);
             var board = new Board(size);
             Assert.AreEqual(25, board.Size.Area);
+
+            for(int i = 0; i < size.Area; i++)
+            {
+                var field = board.GetField(i);
+                Assert.AreEqual(typeof(Empty), field.GetType());
+            }
         }
 
         [Test]
