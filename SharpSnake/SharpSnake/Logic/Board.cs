@@ -18,5 +18,10 @@ namespace SharpSnake.Logic
             Size = size;
             fieldsArray = new Field[size.Area];
         }
+
+        public Field GetField(Vector coordinates)
+        {
+            return fieldsArray[coordinates.Area];
+        }
     }
 }
