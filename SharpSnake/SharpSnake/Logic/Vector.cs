@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SharpSnake.Logic
 {
-    class Vector
+    public class Vector
     {
         public int X { get; set; }
         public int Y { get; set; }
