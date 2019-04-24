@@ -13,5 +13,22 @@ namespace SharpSnake.Logic
         {
             Position = position;
         }
+
+        /// <summary>
+        /// Updates Head - heading and position.
+        /// </summary>
+        /// <param name="headingInput">Heading input to set. If none Heading will not change.</param>
+        public void Update(Direction headingInput)
+        {
+            try
+            {
+                UpdateHeading(headingInput);
+                ApplyMoving();
+            }
+            catch
+            {
+                throw;
+            }
+        }
     }
 }
