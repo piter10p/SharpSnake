@@ -30,5 +30,11 @@ namespace SharpSnake.Logic
                 throw;
             }
         }
+
+        private void UpdateHeading(Direction headingInput)
+        {
+            if (headingInput != Direction.None)
+                Heading = headingInput;
+        }
     }
 }
