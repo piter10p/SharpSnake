@@ -58,6 +58,18 @@ namespace SharpSnake.Tests.Logic
         }
 
         [Test]
+        public void SubtractingInt()
+        {
+            var a = new Vector(10, 50);
+            var b = 5;
+            var c = a - b;
+
+            var expected = new Vector(5, 45);
+
+            Assert.AreEqual(true, c.Equals(expected));
+        }
+
+        [Test]
         public void MultiplyingVector()
         {
             var a = new Vector(-5, 20);
