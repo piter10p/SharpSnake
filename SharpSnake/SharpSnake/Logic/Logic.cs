@@ -32,5 +32,10 @@ namespace SharpSnake.Logic
 
             return deltaTime;
         }
+
+        private void UpdateLogic(Input input)
+        {
+
+        }
     }
 }
