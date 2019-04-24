@@ -82,8 +82,11 @@ namespace SharpSnake.Tests.Logic
             {
                 return;
             }
+            catch
+            {
+                Assert.Fail("Dividing don't throw desired exception.");
+            }
 
-            Assert.Fail();
         }
     }
 }
