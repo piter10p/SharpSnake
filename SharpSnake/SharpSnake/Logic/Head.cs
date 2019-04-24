@@ -6,8 +6,7 @@ namespace SharpSnake.Logic
 {
     class Head
     {
-        
         public Vector Position { get; private set; }
-        public Direction Heading { get; private set; }
+        public Direction Heading { get; private set; } = Direction.Up;
     }
 }
