@@ -27,7 +27,7 @@ namespace SharpSnake.Logic
         {
             while(deltaTime > stepTime)
             {
-                UpdateLogic(input);
+                UpdateHeadPosition(input);
 
                 deltaTime -= stepTime;
             }
@@ -35,9 +35,28 @@ namespace SharpSnake.Logic
             return deltaTime;
         }
 
-        private void UpdateLogic(Input input)
+        private void UpdateHeadPosition(Input input)
         {
+            if (input != Input.None)
+                stats.HeadHeading = input;
 
+            switch(stats.HeadHeading)
+            {
+                case Input.Up:
+                    stats.HeadPosition += new Vector(0, -1);
+                    break;
+                case Input.Down:
+                    stats.HeadPosition += new Vector(0, 1);
+                    break;
+                case Input.Left:
+                    stats.HeadPosition += new Vector(-1, 0);
+                    break;
+                case Input.Right:
+                    stats.HeadPosition += new Vector(1, 0);
+                    break;
+                default:
+                    throw new Exception("HeadHeading cannot be None");
+            }
         }
     }
 }
