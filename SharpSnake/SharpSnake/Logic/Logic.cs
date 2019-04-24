@@ -29,7 +29,7 @@ namespace SharpSnake.Logic
             {
                 while (deltaTime > stepTime)
                 {
-                    UpdateHeadPosition(input);
+                    UpdateHeadPosition(input.Direction);
 
                     deltaTime -= stepTime;
                 }
