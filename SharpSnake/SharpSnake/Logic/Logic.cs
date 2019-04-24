@@ -13,9 +13,8 @@ namespace SharpSnake.Logic
             board = new Board(settings.BoardSize);
         }
 
-        public void Update(float deltaTime)
+        public void Update(float deltaTime, Input input)
         {
-            var input = InputReader.ReadInput();
         }
     }
 }
