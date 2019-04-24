@@ -6,5 +6,6 @@ namespace SharpSnake.Logic
 {
     class Stats
     {
+        public Vector HeadPosition { get; set; }
     }
 }
