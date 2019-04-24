@@ -13,6 +13,7 @@ namespace SharpSnake.Logic
         public Logic(Settings settings)
         {
             board = new Board(settings.BoardSize);
+            stats = new Stats(settings.BoardSize / 2);
         }
 
         /// <summary>
