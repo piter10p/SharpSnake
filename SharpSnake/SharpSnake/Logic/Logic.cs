@@ -15,7 +15,7 @@ namespace SharpSnake.Logic
 
         public void Update(float deltaTime)
         {
-
+            var input = InputReader.ReadInput();
         }
     }
 }
