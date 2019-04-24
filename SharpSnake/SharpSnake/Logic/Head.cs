@@ -8,5 +8,6 @@ namespace SharpSnake.Logic
     {
         
         public Vector Position { get; private set; }
+        public Direction Heading { get; private set; }
     }
 }
