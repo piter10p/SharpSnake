@@ -106,6 +106,18 @@ namespace SharpSnake.Tests.Logic
         }
 
         [Test]
+        public void DividingInt()
+        {
+            var a = new Vector(-5, 40);
+            var b = 5;
+            var c = a / b;
+
+            var expected = new Vector(-1, 8);
+
+            Assert.AreEqual(true, c.Equals(expected));
+        }
+
+        [Test]
         public void DividingByZeroVector()
         {
             try
