@@ -101,5 +101,23 @@ namespace SharpSnake.Logic
                 throw;
             }
         }
+
+        public static Vector operator /(Vector a, int b)
+        {
+            try
+            {
+                if (b == 0)
+                    throw new DivideByZeroException();
+
+                var vector = new Vector();
+                vector.X = a.X / b;
+                vector.Y = a.Y / b;
+                return vector;
+            }
+            catch
+            {
+                throw;
+            }
+        }
     }
 }
