@@ -16,7 +16,7 @@ namespace SharpSnake.Logic
 
         /// <summary>
         /// Updates all game logic.
-        /// Method implements fixed loop for all its operations.
+        /// Method implements fixed time loop for all its operations.
         /// </summary>
         /// <param name="deltaTime">Delta time from last method calling</param>
         /// <param name="input">Player input for logic</param>
