@@ -4,12 +4,12 @@ using System.Text;
 
 namespace SharpSnake.Logic
 {
-    class Stats
+    class State
     {
         public Vector HeadPosition { get; set; }
         public Input HeadHeading { get; set; } = Input.Up;
 
-        public Stats(Vector headPosition)
+        public State(Vector headPosition)
         {
             HeadPosition = headPosition;
         }

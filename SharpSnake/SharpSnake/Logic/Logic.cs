@@ -8,12 +8,12 @@ namespace SharpSnake.Logic
     {
         private Board board;
         private readonly TimeSpan stepTime = TimeSpan.FromMilliseconds(200);
-        private Stats stats;
+        private State state;
 
         public Logic(Settings settings)
         {
             board = new Board(settings.BoardSize);
-            stats = new Stats(settings.BoardSize / 2);
+            state = new State(settings.BoardSize / 2);
         }
 
         /// <summary>
