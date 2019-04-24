@@ -60,6 +60,14 @@ namespace SharpSnake.Logic
             return vector;
         }
 
+        public static Vector operator -(Vector a, int b)
+        {
+            var vector = new Vector();
+            vector.X = a.X - b;
+            vector.Y = a.Y - b;
+            return vector;
+        }
+
         public static Vector operator *(Vector a, Vector b)
         {
             var vector = new Vector();
