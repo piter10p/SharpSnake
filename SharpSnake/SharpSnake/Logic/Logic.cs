@@ -14,7 +14,7 @@ namespace SharpSnake.Logic
             board = new Board(settings.BoardSize);
         }
 
-        public void Update(float deltaTime, Input input)
+        public TimeSpan Update(TimeSpan deltaTime, Input input)
         {
         }
     }
