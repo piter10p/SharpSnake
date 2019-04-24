@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SharpSnake.Logic
 {
-    public enum Input
+    public struct Input
     {
     }
 }
