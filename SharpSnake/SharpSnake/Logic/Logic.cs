@@ -14,6 +14,13 @@ namespace SharpSnake.Logic
             board = new Board(settings.BoardSize);
         }
 
+        /// <summary>
+        /// Updates all game logic.
+        /// Method implements fixed loop for all its operations.
+        /// </summary>
+        /// <param name="deltaTime">Delta time from last method calling</param>
+        /// <param name="input">Player input for logic</param>
+        /// <returns>New value of delta time</returns>
         public TimeSpan Update(TimeSpan deltaTime, Input input)
         {
         }
