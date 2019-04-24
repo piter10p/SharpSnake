@@ -6,12 +6,11 @@ namespace SharpSnake.Logic
 {
     class State
     {
-        public Vector HeadPosition { get; set; }
-        public Input HeadHeading { get; set; } = Input.Up;
+        public Head Head { get; private set; }
 
         public State(Vector headPosition)
         {
-            HeadPosition = headPosition;
+            Head = new Head(headPosition);
         }
     }
 }
