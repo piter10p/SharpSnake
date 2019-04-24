@@ -6,5 +6,6 @@ namespace SharpSnake.Logic
 {
     public struct Input
     {
+        public Direction Direction;
     }
 }
