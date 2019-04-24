@@ -134,7 +134,25 @@ namespace SharpSnake.Tests.Logic
             {
                 Assert.Fail("Dividing don't throw desired exception.");
             }
+        }
 
+        [Test]
+        public void DividingByZeroInt()
+        {
+            try
+            {
+                var a = new Vector(-5, 40);
+                var b = 0;
+                var c = a / b;
+            }
+            catch (DivideByZeroException e)
+            {
+                return;
+            }
+            catch
+            {
+                Assert.Fail("Dividing don't throw desired exception.");
+            }
         }
     }
 }
