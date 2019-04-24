@@ -25,14 +25,21 @@ namespace SharpSnake.Logic
         /// <returns>New value of delta time</returns>
         public TimeSpan Update(TimeSpan deltaTime, Input input)
         {
-            while(deltaTime > stepTime)
+            try
             {
-                UpdateHeadPosition(input);
+                while (deltaTime > stepTime)
+                {
+                    UpdateHeadPosition(input);
 
-                deltaTime -= stepTime;
+                    deltaTime -= stepTime;
+                }
+
+                return deltaTime;
             }
-
-            return deltaTime;
+            catch(Exception e)
+            {
+                throw new Exception("Logic exception.", e);
+            }
         }
 
         private void UpdateHeadPosition(Input input)
