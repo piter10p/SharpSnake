@@ -7,6 +7,7 @@ namespace SharpSnake.Logic
     public class Logic
     {
         private Board board;
+        private readonly TimeSpan stepTime = TimeSpan.FromMilliseconds(200);
 
         public Logic(Settings settings)
         {
