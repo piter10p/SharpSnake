@@ -4,8 +4,12 @@ using System.Text;
 
 namespace SharpSnake.Logic
 {
-    public struct Input
+    public enum Direction
     {
-        public Direction Direction;
+        None,
+        Up,
+        Down,
+        Left,
+        Right
     }
 }

@@ -8,12 +8,12 @@ namespace SharpSnake.Logic
     {
         private Board board;
         private readonly TimeSpan stepTime = TimeSpan.FromMilliseconds(200);
-        private Stats stats;
+        private State state;
 
         public Logic(Settings settings)
         {
             board = new Board(settings.BoardSize);
-            stats = new Stats(settings.BoardSize / 2);
+            state = new State(settings.BoardSize / 2);
         }
 
         /// <summary>
@@ -29,7 +29,7 @@ namespace SharpSnake.Logic
             {
                 while (deltaTime > stepTime)
                 {
-                    UpdateHeadPosition(input);
+                    UpdateHeadPosition(input.Direction);
 
                     deltaTime -= stepTime;
                 }
@@ -42,28 +42,9 @@ namespace SharpSnake.Logic
             }
         }
 
-        private void UpdateHeadPosition(Input input)
+        private void UpdateHeadPosition(Direction headingInput)
         {
-            if (input != Input.None)
-                stats.HeadHeading = input;
-
-            switch(stats.HeadHeading)
-            {
-                case Input.Up:
-                    stats.HeadPosition += new Vector(0, -1);
-                    break;
-                case Input.Down:
-                    stats.HeadPosition += new Vector(0, 1);
-                    break;
-                case Input.Left:
-                    stats.HeadPosition += new Vector(-1, 0);
-                    break;
-                case Input.Right:
-                    stats.HeadPosition += new Vector(1, 0);
-                    break;
-                default:
-                    throw new Exception("HeadHeading cannot be None");
-            }
+            state.Head.Update(headingInput);
         }
     }
 }
