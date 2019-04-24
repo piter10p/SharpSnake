@@ -6,10 +6,5 @@ namespace SharpSnake.Logic
 {
     public enum Input
     {
-        None,
-        Up,
-        Down,
-        Left,
-        Right
     }
 }
