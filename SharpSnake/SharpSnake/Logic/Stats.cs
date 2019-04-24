@@ -7,6 +7,7 @@ namespace SharpSnake.Logic
     class Stats
     {
         public Vector HeadPosition { get; set; }
+        public Input HeadHeading { get; set; } = Input.Up;
 
         public Stats(Vector headPosition)
         {
