@@ -12,5 +12,10 @@ namespace SharpSnake.Logic
         {
             board = new Board(settings.BoardSize);
         }
+
+        public void Update(float deltaTime)
+        {
+
+        }
     }
 }
