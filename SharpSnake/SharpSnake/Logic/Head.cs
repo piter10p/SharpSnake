@@ -23,7 +23,7 @@ namespace SharpSnake.Logic
             try
             {
                 UpdateHeading(headingInput);
-                ApplyMoving();
+                ApplyMove();
             }
             catch
             {
@@ -35,6 +35,27 @@ namespace SharpSnake.Logic
         {
             if (headingInput != Direction.None)
                 Heading = headingInput;
+        }
+
+        private void ApplyMove()
+        {
+            switch (Heading)
+            {
+                case Direction.Up:
+                    Position += new Vector(0, -1);
+                    break;
+                case Direction.Down:
+                    Position += new Vector(0, 1);
+                    break;
+                case Direction.Left:
+                    Position += new Vector(-1, 0);
+                    break;
+                case Direction.Right:
+                    Position += new Vector(1, 0);
+                    break;
+                default:
+                    throw new Exception("HeadHeading cannot be None");
+            }
         }
     }
 }
