@@ -23,6 +23,14 @@ namespace SharpSnake.Logic
         /// <returns>New value of delta time</returns>
         public TimeSpan Update(TimeSpan deltaTime, Input input)
         {
+            while(deltaTime > stepTime)
+            {
+                UpdateLogic(input);
+
+                deltaTime -= stepTime;
+            }
+
+            return deltaTime;
         }
     }
 }
