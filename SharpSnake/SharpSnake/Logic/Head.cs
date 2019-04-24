@@ -7,5 +7,6 @@ namespace SharpSnake.Logic
     class Head
     {
         
+        public Vector Position { get; private set; }
     }
 }
