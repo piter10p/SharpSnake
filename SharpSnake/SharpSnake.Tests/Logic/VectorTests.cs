@@ -22,7 +22,7 @@ namespace SharpSnake.Tests.Logic
         }
 
         [Test]
-        public void Adding()
+        public void AddingVector()
         {
             var a = new Vector(5, 20);
             var b = new Vector(5, 20);
@@ -34,7 +34,7 @@ namespace SharpSnake.Tests.Logic
         }
 
         [Test]
-        public void Subtracting()
+        public void SubtractingVector()
         {
             var a = new Vector(10, 50);
             var b = new Vector(5, 20);
@@ -46,7 +46,7 @@ namespace SharpSnake.Tests.Logic
         }
 
         [Test]
-        public void Multiplying()
+        public void MultiplyingVector()
         {
             var a = new Vector(-5, 20);
             var b = new Vector(5, 20);
@@ -58,7 +58,7 @@ namespace SharpSnake.Tests.Logic
         }
 
         [Test]
-        public void Dividing()
+        public void DividingVector()
         {
             var a = new Vector(-5, 40);
             var b = new Vector(5, 20);
@@ -70,7 +70,7 @@ namespace SharpSnake.Tests.Logic
         }
 
         [Test]
-        public void DividingByZero()
+        public void DividingByZeroVector()
         {
             try
             {
