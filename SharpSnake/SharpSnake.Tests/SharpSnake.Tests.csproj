@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SharpSnake\SharpSnake.csproj" />
+    <ProjectReference Include="..\SharpSnake.Logic\SharpSnake.Logic.csproj" />
   </ItemGroup>
 
 </Project>
