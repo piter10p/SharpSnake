@@ -6,7 +6,7 @@ namespace SharpSnake.Logic
 {
     public static class InputReader
     {
-        public static Input ReadInput()
+        /*public static Input ReadInput()
         {
             var input = Input.None;
 
@@ -34,6 +34,6 @@ namespace SharpSnake.Logic
             }
 
             return Input.None;
-        }
+        }*/
     }
 }
